@@ -1,12 +1,12 @@
-import { Component , OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-servicedessi',
-  templateUrl: './servicedessi.component.html',
-  styleUrls: ['./servicedessi.component.css']
+  selector: 'app-servicessi',
+  templateUrl: './servicessi.component.html',
+  styleUrls: ['./servicessi.component.css']
 })
-export class ServicedeSSIComponent implements OnInit {
-  ServicedeSSI = [
+export class ServicessiComponent implements OnInit {
+  servicessi = [
     {
       nom: 'Payer la facture wifi HEXABYTE ',
       description: 'ADSL',
@@ -38,5 +38,6 @@ export class ServicedeSSIComponent implements OnInit {
   ajouterAuPanier(DevLogiciels: any) {
     console.log('Ajout au panier :', DevLogiciels);
   }
+
 
 }

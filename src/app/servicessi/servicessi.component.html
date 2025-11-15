@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h2> Service de SSI</h2>
+    <div class="row">
+        <div *ngFor="let DV of servicessi" class="col-md-4 mb-4">
+            <div class="card">
+                <img [src]="DV.image" class="card-img-top" alt="{{ DV.nom }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ DV.nom }}</h5>
+                    <p class="card-text">{{ DV.description }}</p>
+                    <p class="card-text"><strong>Prix:</strong> {{ DV.prix | currency}}</p>
+                    <button routerLink="/reserv2" class="btn btn-warning" (click)="ajouterAuPanier(DV)">Resèrver votre
+                        rendez-vous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
