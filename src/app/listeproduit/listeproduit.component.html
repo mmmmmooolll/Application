@@ -1,0 +1,51 @@
+<body>
+<div class="container">
+<h1>Ajout d'un produit</h1>
+<form>
+    <div class="form-group">
+        <label> ID:</label>
+        <input type="number" name="id" class="form-control" required ngModel #i="ngModel"  placeholder="Enter your ID">
+    </div>
+    <div class="alert alert-danger" *ngIf="i.invalid && i.touched">
+        The ID is a required field
+    </div>
+    <div class="form-group">
+        <label> Title:</label>
+        <input type="text" name="titre" class="form-control" required ngModel #t="ngModel"  placeholder="Enter your Title">
+    </div>
+    <div class="alert alert-danger" *ngIf="t.invalid && t.touched">
+        The Title is a required field
+    </div>
+    <div class="form-group">
+        <label> Price:</label>
+        <input type="number" name="prix" class="form-control" required ngModel #p="ngModel"  placeholder="Enter your Price">
+    </div>
+    <div class="alert alert-danger" *ngIf="p.invalid && p.touched">
+        The Price is a required field
+    </div>
+    <div class="form-group">
+        <label> Quantity:</label>
+        <input type="number" name="quantite" class="form-control" required ngModel #q="ngModel"  placeholder="Enter your Login">
+    </div>
+    <div class="alert alert-danger" *ngIf="q.invalid && q.touched">
+        The Quantity is a required field
+    </div>
+    <button class="btn btn-success" (click)="save()"> ajouter</button>
+</form>
+<h1>Liste de produit</h1> 
+    <div class="row h-100 justify-content-center align-items-center">
+        <div *ngFor="let pr of listeproduit">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../assets/image/p1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{pr.titre}}</h5>
+                        <p class="card-text">prix: {{pr.prix}} $ --quantité:{{pr.quantite}}</p>
+                        <a href="#" class="btn btn-primary" (click)="save()">ajouter</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

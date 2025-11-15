@@ -1,0 +1,110 @@
+<div *ngIf="!startTest">
+    
+    <div class="container">
+        <h1 style="color: #0d6efd;">PHP Basics</h1>
+        <p>PHP is a powerful server-side scripting language used for web development. Let's start with some basic concepts:</p>
+        <h2 style="color: #0d6efd;">Variables</h2>
+        <p>PHP variables start with a dollar sign ($) followed by the name. They are loosely typed and do not require explicit declaration of data types.</p>
+        <pre><code class="code">
+          $name = "John";
+          $age = 30;</code></pre>
+        <h2 style="color: #0d6efd;">Functions</h2>
+        <p>Functions in PHP are defined using the <code class="code">function</code> keyword. They can accept parameters and return values.</p>
+        <pre><code class="code">
+          function greet($name) &#123;
+              return "Hello, " . $name;
+              &#125;
+          
+          $result = greet("Alice");
+          echo $result;</code></pre>
+        <h2 style="color: #0d6efd;">Control Structures</h2>
+        <p>PHP supports common control structures such as if-else statements, loops, and switch statements.</p>
+        <pre><code class="code">
+          $x = 10;
+          
+          if ($x &gt; 0) &#123;
+              echo "Positive";
+          &#125; else &#123;
+              echo "Negative";
+          &#125;
+      </code></pre>
+        <h2 style="color: #0d6efd;">Conclusion</h2>
+        <p>PHP is a versatile language used in web development for building dynamic and interactive websites. With its extensive functionality and widespread adoption, mastering PHP opens up numerous opportunities in the field of web development.</p>
+      </div>
+      
+      <div class="jumbotron text-center">
+        <h1>Advanced PHP Course</h1>
+        <p>Take your PHP skills to the next level with advanced topics and techniques.</p>
+      </div>
+      
+      
+      
+      <div class="container">
+        <button class="getall"> Get all php advanced courses (<span class="old">36$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;16$</span>)</button>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Object-Oriented PHP--------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                <p class="card-text">Learn how to implement classes, objects, and inheritance in PHP to build modular and maintainable code.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Database Integration--------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                <p class="card-text">Explore PHP's database integration capabilities and learn to interact with databases using MySQL or other database systems.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Error Handling---------------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                <p class="card-text">Master error handling techniques in PHP to gracefully handle errors and exceptions in your applications.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Security Best Practices-------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                <p class="card-text">Understand security vulnerabilities in PHP applications and learn best practices to secure your code and prevent common attacks.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <h1 class="goto" (click)="startTests()">Start free preparing Test Now >></h1>
+</div>
+<div *ngIf="startTest">
+  <div class="benefits">
+    <h2>Benefits of CS-Academy Certification:</h2>
+    <ul>
+        <li>Validation of your skills and knowledge in cutting-edge technologies.</li>
+        <li>Enhanced credibility and recognition in the industry.</li>
+        <li>Increased career opportunities and earning potential.</li>
+        <li>Access to exclusive job listings and networking opportunities.</li>
+        <li>Continual professional development and updates to stay ahead in the field.</li>
+    </ul>
+</div>
+
+
+
+<div class="call-to-action">
+    <p>Don't miss out on the opportunity to take your career to the next level.</p>
+    
+</div>
+
+<h1 class="goto" (click)="startTests()">back To course >></h1>
+<img src="../assets/signup-image.jpg" alt="">
+</div>

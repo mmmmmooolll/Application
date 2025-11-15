@@ -1,0 +1,19 @@
+body{
+    background-image: url('src\assets\computer-science-banner.jpg');
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+}
+.old{
+    text-decoration: line-through;
+    color: red;
+}
+.new{
+    color: green;
+}
+.col-md-6:hover{
+   
+    
+    transform: scale(1.05);
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}

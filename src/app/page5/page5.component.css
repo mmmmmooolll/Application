@@ -1,0 +1,5 @@
+.container{
+    box-sizing: border-box;
+    border-color: chocolate;
+    border: 12px solid #000;
+}

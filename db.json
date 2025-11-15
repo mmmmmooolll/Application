@@ -1,0 +1,92 @@
+{
+  "produits": [
+    {
+      "id": "1",
+      "titre": "produit1",
+      "prix": 20,
+      "quantité": 5,
+      "like": 0
+    },
+    {
+      "id": "2",
+      "titre": "produit2",
+      "prix": 10,
+      "quantité": 3,
+      "like": 0
+    },
+    {
+      "id": "3",
+      "titre": "produit3",
+      "prix": 30,
+      "quantité": 12,
+      "like": 0
+    },
+    {
+      "id": "4",
+      "titre": "produit4",
+      "prix": 15,
+      "quantité": 18,
+      "like": 0
+    },
+    {
+      "id": "4",
+      "titre": "lenovo",
+      "prix": 150000,
+      "quantite": 2
+    },
+    {
+      "id": "4",
+      "titre": "lenovo",
+      "prix": 150000,
+      "quantite": 2
+    },
+    {
+      "id": "4",
+      "titre": "lenovo",
+      "prix": 150000,
+      "quantite": 2
+    },
+    {
+      "id": "1",
+      "titre": "lenovo",
+      "prix": 150000,
+      "quantite": 2
+    },
+    {
+      "id": "1",
+      "titre": "HP",
+      "prix": 150000,
+      "quantite": 22
+    },
+    {
+      "id": "1",
+      "titre": "HP",
+      "prix": 1990,
+      "quantite": 55
+    },
+    {
+      "id": "1",
+      "titre": "HP",
+      "prix": 1990,
+      "quantite": 55
+    },
+    {
+      "id": "1",
+      "titre": "HP",
+      "prix": 1990,
+      "quantite": 55
+    },
+    {
+      "id": "1",
+      "titre": "HP",
+      "prix": 1990,
+      "quantite": 55
+    },
+    {
+      "id": "7184"
+    },
+    {
+      "id": "6e88"
+    }
+  ]
+}

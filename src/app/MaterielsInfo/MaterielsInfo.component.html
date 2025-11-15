@@ -1,0 +1,22 @@
+
+
+
+<div class="container mt-4">
+    <h2>Matériels disponibles</h2>
+    <div class="row">
+      <div *ngFor="let MI of MaterielsInfo" class="col-md-4 mb-4">
+        <div class="card">
+          <img [src]="MI.image" class="card-img-top" alt="{{ MI.nom }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ MI.nom }}</h5>
+            <p class="card-text">{{ MI.description }}</p>
+            <p class="card-text"><strong>Prix:</strong> {{ MI.prix | currency}}</p>
+            <button routerLink="/reserv2" class="btn btn-info" (click)="ajouterAuPanier()">Ajouter Au Panier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+

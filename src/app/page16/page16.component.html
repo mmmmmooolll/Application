@@ -1,0 +1,223 @@
+<div *ngIf="!startTest">
+    <div class="container">
+      <h1 style="color: #0d6efd;">SQL Basics</h1>
+      <p>Structured Query Language (SQL) is a standard language for managing and manipulating relational databases. Let's start with some basic concepts:</p>
+      <h2 style="color: #0d6efd;">Data Retrieval</h2>
+      <p>SQL queries are used to retrieve data from a database. The SELECT statement is commonly used to retrieve data from one or more tables.</p>
+      <pre><code class="code">
+        SELECT column1, column2
+        FROM table_name;</code></pre>
+      <h2 style="color: #0d6efd;">Data Manipulation</h2>
+      <p>SQL supports various commands for manipulating data in a database, such as INSERT, UPDATE, and DELETE.</p>
+      <pre><code class="code">
+        INSERT INTO table_name (column1, column2)
+        VALUES (value1, value2);</code></pre>
+      <h2 style="color: #0d6efd;">Data Definition</h2>
+      <p>SQL allows you to define and modify the structure of database objects using commands like CREATE, ALTER, and DROP.</p>
+      <pre><code class="code">
+        CREATE TABLE table_name (
+            column1 datatype,
+            column2 datatype
+        );</code></pre>
+      <h2 style="color: #0d6efd;">Conclusion</h2>
+      <p>SQL is a powerful language for managing and querying relational databases. With SQL skills, you can efficiently interact with databases to retrieve, manipulate, and define data, making you a valuable asset in the field of database management and development.</p>
+    </div>
+    
+    <div class="jumbotron text-center">
+      <h1>Advanced SQL Courses </h1>
+      <p>Take your SQL skills to the next level with advanced topics and techniques.</p>
+      
+    </div>
+    
+    
+    
+    <div class="container">
+      <button class="getall"> Get all sql advanced courses (<span class="old">36$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;16$</span>)</button>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Joins and Subqueries--------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+              <p class="card-text">Learn advanced techniques for combining data from multiple tables using joins and subqueries.</p>
+              <a href="#" class="btn btn-primary">get course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Indexes and Optimization----------------------------------&nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+              <p class="card-text">Explore strategies for optimizing SQL queries and improving database performance using indexes and query optimization techniques.</p>
+              <a href="#" class="btn btn-primary">get course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Transactions and Locking-----------------------------------&nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+              <p class="card-text">Understand the concepts of transactions and locking in SQL to ensure data consistency and integrity in multi-user environments.</p>
+              <a href="#" class="btn btn-primary">get course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Stored Procedures and Functions--------------------------&nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+              <p class="card-text">Learn how to create and use stored procedures and functions in SQL to encapsulate and reuse logic within the database.</p>
+              <a href="#" class="btn btn-primary">get course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 (click)="startTests()" class="goto">Start Test >></h1>
+    
+  </div>
+  <div *ngIf="startTest">
+   
+      
+     
+        <body>
+          <h1 style="color: red;">based on these tables you can answer the test </h1>
+          <table >
+            <caption>Employees Table</caption>
+              <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Department</th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Alice</td>
+                  <td>HR</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Bob</td>
+                  <td>IT</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Charlie</td>
+                  <td>Sales</td>
+              </tr>
+          </table>
+      
+        
+          <table >
+            <caption>Products Table</caption>
+              <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Department</th>
+              </tr>
+              <tr>
+                  <td>101</td>
+                  <td>Laptop</td>
+                  <td>$800</td>
+                  <td>IT</td>
+              </tr>
+              <tr>
+                  <td>102</td>
+                  <td>Smartphone</td>
+                  <td>$600</td>
+                  <td>Sales</td>
+              </tr>
+              <tr>
+                  <td>103</td>
+                  <td>Headphones</td>
+                  <td>$100</td>
+                  <td>IT</td>
+              </tr>
+          </table>
+      
+         
+          <table >
+            <caption>Orders Table</caption>
+              <tr>
+                  <th>Order ID</th>
+                  <th>Customer ID</th>
+                  <th>Product ID</th>
+                  <th>Quantity</th>
+              </tr>
+              <tr>
+                  <td>1001</td>
+                  <td>1</td>
+                  <td>101</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <td>1002</td>
+                  <td>2</td>
+                  <td>102</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>1003</td>
+                  <td>3</td>
+                  <td>103</td>
+                  <td>3</td>
+              </tr>
+          </table>
+      
+      </body>
+    
+      
+    <div class="container">
+
+
+      <form id="testForm">
+        <div *ngFor="let ques of datas; let i = index">
+           
+          <div *ngIf="i === currentIndex">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>{{ ques.QNnumber }}</h2>
+                <label for="q1">{{ ques.codeSnipet }}</label>
+                <!-- <pre><code class="code"></code></pre> -->
+                <input type="text" class="form-control" id="q1" name="q1" required [(ngModel)]="Userres">
+              </div>
+            </div>
+  
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary" (click)="testandnext(Userres, ques)">Submit Answer</button>
+              </div>
+            </div>
+            <h1> your score : {{score}} / 40</h1> 
+            <span *ngIf="score>4">Now you deserve the certificate</span>
+          </div>
+        </div>
+        
+
+        
+          
+            
+            
+     
+        <button (click)="updateDeservness()" class="btn btn-danger" [disabled]="!(score>4)">quite test</button>
+      </form>
+    </div>
+    <div class="benefits">
+      <h2>Benefits of CS-Academy Certification:</h2>
+      <ul>
+          <li>Validation of your skills and knowledge in cutting-edge technologies.</li>
+          <li>Enhanced credibility and recognition in the industry.</li>
+          <li>Increased career opportunities and earning potential.</li>
+          <li>Access to exclusive job listings and networking opportunities.</li>
+          <li>Continual professional development and updates to stay ahead in the field.</li>
+      </ul>
+  </div>
+  
+  <div class="call-to-action">
+      <p>Don't miss out on the opportunity to take your career to the next level.</p>
+      
+  </div>
+  <h1 class="goto" (click)="startTests()">back To course >></h1>
+  </div>

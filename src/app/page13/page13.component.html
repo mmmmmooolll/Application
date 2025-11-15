@@ -1,0 +1,230 @@
+
+ 
+ 
+      <body>
+  
+        <div *ngIf="startTest"><div class="container">
+          <h1 style="color: #0d6efd;">Python Basics</h1>
+          <p>Python is a versatile and powerful programming language known for its simplicity and readability. Let's start with some basic concepts:</p>
+          <h2 style="color: #0d6efd;">Declaration</h2>
+          <p>Python uses dynamic typing, meaning you don't need to declare variable types explicitly. Variables are created when assigned values.</p>
+          <pre><code class="code">
+      x = 5
+      y = "Hello, World!"
+      z = True</code></pre>
+          <h2 style="color: #0d6efd;">Functions</h2>
+          <p>Functions in Python are defined using the <code class="code">def</code> keyword. They can accept parameters and return values.</p>
+          <pre><code class="code">def greet(name):
+          return "Hello, " + name
+      
+      result = greet("Alice")
+      print(result)</code></pre>
+          <h2 style="color: #0d6efd;">Control Flow</h2>
+          <p>Python supports common control flow constructs like if-else statements and loops.</p>
+          <pre><code class="code">if x &gt; 10:
+          print("x is greater than 10")
+      else:
+          print("x is less than or equal to 10")
+      
+      for i in range(5):
+          print(i)</code></pre>
+  
+          <section>
+            <h2 style="color: #0d6efd;">Operations on Sets</h2>
+            <p>Common operations on sets include:</p>
+            <ul>
+                <li>Adding elements</li>
+                <li>Removing elements</li>
+                <li>Union, intersection, and difference</li>
+                <li>Subset and superset checks</li>
+            </ul>
+            <pre><code class="code">
+                
+              # Creating a set
+              my_set = &#123;1, 2, 3&#125;
+                    
+              # Adding elements
+              my_set.add(4)
+                    
+              # Removing elements
+              my_set.remove(3)
+                    
+              # Set operations
+              union_set = set1.union(set2)
+              intersection_set = set1.intersection(set2)
+              difference_set = set1.difference(set2)
+                    
+              # Subset and superset checks
+              is_subset = set1.issubset(set2)
+              is_superset = set1.issuperset(set2)
+                
+            </code></pre>
+        </section>
+        <section>
+            <h2 style="color: #0d6efd;">Applications of Sets</h2>
+            <p>Sets are useful for tasks involving:</p>
+            <ul>
+                <li>Removing duplicates from a list</li>
+                <li>Checking for membership</li>
+                <li>Performing set operations in mathematics</li>
+            </ul>
+        </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+          <h2 style="color: #0d6efd;">Conclusion</h2>
+          <p>This is just a glimpse into the world of Python programming. With its rich ecosystem and vast community support, Python offers endless possibilities for software development, data analysis, machine learning, and more.</p>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        
+      <div class="jumbotron text-center">
+          <h1>Advanced Python Course</h1>
+          <p>Take your Python skills to the next level with advanced topics and techniques.</p>
+        </div>
+        
+       
+        
+      <div class="container">
+        <button class="getall"> Get all python advanced courses (<span class="old">36$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;16$</span>)</button>
+  
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Object-Oriented Programming----------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                  <p class="card-text">Learn how to create classes, objects, and implement inheritance and polymorphism and all 4-fundamental OOP</p>
+                  <a href="#" class="btn btn-primary">Take course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Advanced Data Structures---------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                  <p class="card-text">Explore advanced data structures like sets, dictionaries, and tuples, and understand their applications.</p>
+                  <a href="#" class="btn btn-primary">Take course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Error Handling---------------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                  <p class="card-text">Master exception handling techniques to gracefully handle errors and exceptions in your Python programs.</p>
+                  <a href="#" class="btn btn-primary">Take course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Concurrency and Multithreading-------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                  <p class="card-text">Understand concurrency and multithreading concepts and learn how to write concurrent Python programs.</p>
+                  <a href="#" class="btn btn-primary">Take course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="goto" (click)="startTests()">Start free preparing Test Now >></h1>
+       
+  
+    </div>
+    
+    
+    <div *ngIf="!startTest">
+  <div class="jumbotron text-center">
+      <h1>Python Prepering Free Test</h1>
+      <p>Answer the following 40 questions to test your Python knowledge.</p>
+    </div>
+      <div><img src="../assets/signup-image.jpg" alt=""></div>
+    
+      <div class="container">
+        <form id="testForm">
+          
+          <div *ngFor="let ques of datas; let i = index">
+             
+            <div *ngIf="i === currentIndex">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>{{ ques.QNnumber }}</h2>
+                  <label for="q1">What is the output of the following code?</label>
+                  <pre><code class="code">{{ ques.codeSnipet }}</code></pre>
+                  <input type="text" class="form-control" id="q1" name="q1" required [(ngModel)]="Userres">
+                </div>
+              </div>
+    
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary" (click)="testandnext(Userres, ques)">Submit Answer</button>
+                </div>
+              </div>
+              <h1> your score : {{score}} / 40</h1> 
+              <span *ngIf="score>5">Now you deserve the certificate</span>
+            </div>
+          </div>
+          
+  
+          
+            
+              
+              
+       
+          <button (click)="updateDeservness()" class="btn btn-danger" [disabled]="!(score>5)">quite test</button>
+        </form>
+      </div>
+    </div>
+    <div *ngIf="!startTest">
+      <div class="benefits">
+        <h2>Benefits of CS-Academy Certification:</h2>
+        <ul>
+            <li>Validation of your skills and knowledge in cutting-edge technologies.</li>
+            <li>Enhanced credibility and recognition in the industry.</li>
+            <li>Increased career opportunities and earning potential.</li>
+            <li>Access to exclusive job listings and networking opportunities.</li>
+            <li>Continual professional development and updates to stay ahead in the field.</li>
+        </ul>
+    </div>
+    
+    <div class="call-to-action">
+        <p>Don't miss out on the opportunity to take your career to the next level.</p>
+        
+    </div>
+    <h1 class="goto" (click)="startTests()">back To course >></h1>
+    
+    </div>
+    
+    
+  </body>
+  

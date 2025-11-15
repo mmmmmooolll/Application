@@ -1,0 +1,30 @@
+h1{
+    color:coral;
+    font-family: 'Courier New', Courier,
+     monospace;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    border: 5px;
+
+}
+h1:hover{
+letter-spacing:4px;
+border-color: black;
+
+}
+body{
+background-color: rgb(243, 235, 236);
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+

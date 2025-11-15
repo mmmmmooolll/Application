@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Academy Certification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .certificate {
+            text-align: center;
+        }
+        .certificate h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .certificate p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .certificate .student-name {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .certificate {
+            width: 800px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+        .certificate h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .certificate p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+        .signature p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .certificate .academy-logo {
+            max-width: 150px;
+            margin-top: 20px;
+        }
+        .signature {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .signature img {
+            max-width: 200px;
+        }
+        .signature p {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <img [src]="img" alt="CS Academy Logo" class="academy-logo">
+        <h2 style="color: rgb(48, 75, 0);">Certificate of Completion</h2>
+        <p>This is to certify that</p>
+        <h3>{{name}} {{firstName}}</h3>
+        <p>has successfully completed the course on</p>
+        <h3>[{{corseName}}]</h3>
+        <p>issued on [{{currentDate}} at {{Time}}]</p>
+        <div class="signature">
+            <p>__________________________</p>
+            <p>[Instructor's Name & Head of CS Academy:  Ahmed Achour]</p>
+            <p>[Instructor's Signature : ]</p>
+        </div>
+    </div>
+    <div style="text-align: center;"><h1>you scored {{score}}/40</h1>
+<a href="certificate.pdf" download="certificate.pdf" class="download-btn">Download Certificate</a></div>
+
+</body>
+
+</html> 

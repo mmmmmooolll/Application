@@ -1,0 +1,118 @@
+<div *ngIf="!startTest">
+    <div class="container">
+        <h1 style="color: #0d6efd;">Java Basics</h1>
+        <p>Java is a versatile and widely-used programming language known for its portability and robustness. Let's start with some basic concepts:</p>
+        <h2 style="color: #0d6efd;">Variables and Data Types</h2>
+        <p>Java uses strongly-typed variables, meaning you need to declare the data type of a variable before using it. Java supports various data types such as int, double, boolean, and String.</p>
+        <pre><code class="code">
+            int age = 30;
+            double price = 10.5;
+            boolean isJavaFun = true;
+            String message = "Hello, Java!";
+        </code></pre>
+        <h2 style="color: #0d6efd;">Control Flow</h2>
+        <p>Java supports common control flow constructs like if-else statements, loops, and switch-case statements.</p>
+        <pre><code class="code">
+            if (age &gt;= 18) &#123;
+                System.out.println("You are an adult.");
+                &#125; else &#123;
+                System.out.println("You are a minor.");
+                &#125;
+        
+            for (int i = 0; i &lt; 5; i++) &#123;
+                System.out.println("Count: " + i);
+                &#125;
+        </code></pre>
+        <h2 style="color: #0d6efd;">Object-Oriented Programming</h2>
+        <p>Java is an object-oriented programming language. You can create classes and objects, implement inheritance, encapsulation, and polymorphism.</p>
+        <pre><code class="code">
+            class Car &#123;
+                String color;
+                int speed;
+            
+                void drive() &#123;
+                    System.out.println("Driving at speed: " + speed);
+                    &#125;
+                    &#125;
+            
+            Car myCar = new Car();
+            myCar.color = "Red";
+            myCar.speed = 60;
+            myCar.drive();
+        </code></pre>
+        <h2 style="color: #0d6efd;">Conclusion</h2>
+        <p>This is just a glimpse into the world of Java programming. With its rich features and extensive libraries, Java is widely used in various domains such as web development, mobile app development, and enterprise software.</p>
+    </div>
+    
+    <div class="jumbotron text-center">
+        <h1>Advanced Java Course</h1>
+        <p>Take your Java skills to the next level with advanced topics and techniques.</p>
+    </div>
+    
+   
+    
+    <div class="container">
+        <button class="getall"> Get all java advanced courses (<span class="old">36$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;16$</span>)</button>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Topics in Java------------------------------------ &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                        <p class="card-text">Explore advanced topics in Java such as multithreading, networking, and collections framework.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Enterprise Development------------------------------ &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                        <p class="card-text">Learn how to develop enterprise-level applications using Java Enterprise Edition (Java EE) technologies.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Persistence and ORM---------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                        <p class="card-text">Understand persistence mechanisms in Java with technologies like JDBC, JPA, and Hibernate.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Frameworks-------------------------------------------- &nbsp;&nbsp;<span class="old">9$</span><span class="new">&nbsp;&nbsp;&nbsp;&nbsp;4$</span></h5>
+                        <p class="card-text">Explore popular Java frameworks like Spring and JavaServer Faces (JSF) for building robust and scalable applications.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <h1 class="goto" (click)="startTests()"> Start free preparing Test Now >></h1>
+</div>
+<div *ngIf="startTest">
+    <div class="benefits">
+      <h2>Benefits of CS-Academy Certification:</h2>
+      <ul>
+          <li>Validation of your skills and knowledge in cutting-edge technologies.</li>
+          <li>Enhanced credibility and recognition in the industry.</li>
+          <li>Increased career opportunities and earning potential.</li>
+          <li>Access to exclusive job listings and networking opportunities.</li>
+          <li>Continual professional development and updates to stay ahead in the field.</li>
+      </ul>
+  </div>
+  
+  <div class="call-to-action">
+      <p>Don't miss out on the opportunity to take your career to the next level.</p>
+  </div>
+  <h1 class="goto" (click)="startTests()">back To course >></h1>
+  </div>
+    

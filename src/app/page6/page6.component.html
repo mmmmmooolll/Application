@@ -1,0 +1,56 @@
+<body>
+ 
+    <div class="container-fluid">
+      <h1 style="color: brown;  border-bottom: 2px solid #000; ">Plateforme Description:</h1>
+      <br>
+      <h5><h3 style="color: rgb(88, 186, 235);font: 2em sans-serif;">CS-A</h3> is an e-learning website where you can access free courses and paid advanced courses. You can also take a free test consisting of 40 questions. If you score more than 30 points, you qualify for certification, which you can obtain in the certificate component.</h5>
+  </div>
+ 
+    
+
+    <div class="main-content">
+        <div class="content-left">
+          <div class="slideshow">
+            <img src="..\assets\signup-image.jpg" alt="Image 1">
+            <img src="..\assets\signup-image.jpg" alt="Image 2">
+            <img src="..\assets\signup-image.jpg" alt="Image 3">
+        </div>
+        <!-- Link to your JavaScript file -->
+        <script>
+          const images = document.querySelectorAll('.slideshow img');
+let currentImageIndex = 0;
+
+function nextImage() {
+    images[currentImageIndex].classList.remove('active');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].classList.add('active');
+}
+
+// Change image every 5 seconds
+setInterval(nextImage, 5000);
+        </script>
+
+
+
+
+
+
+            <h1 style="color: red;">Why CS-Academy Certification?</h1>
+            <ul>
+                <li>Validation of your skills and knowledge in cutting-edge technologies.</li>
+                <li>Enhanced credibility and recognition in the industry.</li>
+                <li>Increased career opportunities and earning potential.</li>
+                <li>Access to exclusive job listings and networking opportunities.</li>
+                <li>Continual professional development and updates to stay ahead in the field.</li>
+            </ul>
+            <div class="call-to-action">
+                <p>Don't miss out on the opportunity to take your carrer to the next level.</p>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="bd">
+                <app-page14 style="width: fit-content;"></app-page14>
+            </div>
+        </div>
+    </div>
+</body>

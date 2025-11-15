@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(181, 222, 245);
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+}
+p{
+    background-color: bisque;
+}
+.col-md-6:hover{
+   
+    
+    transform: scale(1.05);
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
