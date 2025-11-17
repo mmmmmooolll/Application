@@ -9,7 +9,7 @@ import { WelcomComponent } from './welcom/welcom.component';
 import { Welcom2Component } from './welcom2/welcom2.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListeproduitComponent } from './listeproduit/listeproduit.component';
-import { ServicessiComponent } from './servicessi/servicessi.component'; 
+import { ServicedeSSIComponent } from './servicede-ssi/servicede-ssi.component';
 
 const routes: Routes = [
   {path:'MaterielsInfo',component:MaterielsInfoComponent},
@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:'welcom2',component:Welcom2Component},
   {path:'navbar',component:NavbarComponent},
   {path:'listeproduit',component:ListeproduitComponent},
-  {path: 'servicessi',component:ServicessiComponent},
+  {path: 'ServicedeSSI',component:ServicedeSSIComponent},
 
 
 

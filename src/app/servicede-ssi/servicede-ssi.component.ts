@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-servicessi',
-  templateUrl: './servicessi.component.html',
-  styleUrls: ['./servicessi.component.css']
+  selector: 'app-servicede-ssi',
+  templateUrl: './servicede-ssi.component.html',
+  styleUrls: ['./servicede-ssi.component.css']
 })
-export class ServicessiComponent implements OnInit {
+export class ServicedeSSIComponent implements OnInit {
   servicessi = [
     {
       nom: 'Payer la facture wifi HEXABYTE ',
@@ -41,3 +41,4 @@ export class ServicessiComponent implements OnInit {
 
 
 }
+

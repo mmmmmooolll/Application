@@ -13,7 +13,7 @@ import { Welcom2Component } from './welcom2/welcom2.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListeproduitComponent } from './listeproduit/listeproduit.component';
 import { HttpClientModule} from '@angular/common/http';
-import { ServicessiComponent } from './servicessi/servicessi.component';
+import { ServicedeSSIComponent } from './servicede-ssi/servicede-ssi.component';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import { ServicessiComponent } from './servicessi/servicessi.component';
     NavbarComponent,
     //NavbarComponent,
     ListeproduitComponent,
-    ServicessiComponent
+    ServicedeSSIComponent
   ],
   imports: [
     FormsModule,
